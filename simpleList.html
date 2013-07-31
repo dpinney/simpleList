@@ -1,25 +1,59 @@
 <head>
 	<style TYPE="text/css">
-		div.note {background:gainsboro; min-height:30px; line-height:30px; max-width:1000px; width:80%; font-family:sans-serif; margin:4px auto 4px auto; padding:0px 4px 0px 4px}
-		div#newNote {background:palegreen; width:30px; text-align:center; font-size:30px; cursor:pointer; -webkit-user-select:none; -moz-user-select:none}
-		div.delButton {display:none; background:darkgray; float:right; color:white; width:30px; height:30px; margin-right:-4px; text-align:center}
+		p, input {margin:0px; padding:0px; border:0px} /*Things inside notes should just conform to note dimensions.*/
+		.note {display:block; background:gainsboro; border:0px; min-height:30px; line-height:30px; max-width:1000px; width:80%; margin:4px auto 4px auto; font-family:sans-serif; padding:0px 4px 0px 4px}
+		div.noteSelected {background:dimgray}
+		div.button {width:30px; text-align:center; cursor:pointer; -webkit-user-select:none; -moz-user-select:none}
+		div#newNote {background:palegreen; color:green; font-size:18pt}
+		div.noteButton {display:none; background:darkgray; color:white; margin-top:-30px}
+		div.delMe {float:right; margin-right:-34px}
+		div.saveMe {float:left; margin-left:-34px}
 	</style>
 </head>
 
 <body>
-	<div id="newNote" class="note">&plus;</div>
-	<div class="note" onclick="javascript:noteClicked(this)">Hello again world. It's me.<div class="delButton">&#10005;</div></div>
-	<div class="note" onclick="javascript:noteClicked(this)">Post-ironic nisi High Life, quinoa quis whatever fashion axe. Pork belly meggings master cleanse DIY locavore sed. Accusamus nostrud fugiat raw denim cardigan Vice. Excepteur four loko irure jean shorts. Gentrify shabby chic nulla sustainable, intelligentsia placeat veniam ex jean shorts YOLO wolf. Post-ironic velit master cleanse DIY yr scenester. Try-hard wolf ex, sartorial ugh narwhal eiusmod consequat pariatur selvage duis literally.<div class="delButton">&#10005;</div></div>
+	<div id="newNote" class="note button" onclick="javascript:newNote()">&plus;</div>
+	<div class="note" onclick="javascript:noteClicked(this)">
+		<p>Hello again world. It's me.</p>
+		<div class="saveMe noteButton button" onclick="javascript:saveClicked(this)">&#10003;</div>
+		<div class="delMe noteButton button" onclick="javascript:delClicked(this)">&#10005;</div>
+	</div>
+	<div id="note2" class="note" onclick="javascript:noteClicked(this)">
+		<p>Post-ironic nisi High Life, quinoa quis whatever fashion axe. Pork belly meggings master cleanse DIY locavore sed. Accusamus nostrud fugiat raw denim cardigan Vice. Excepteur four loko irure jean shorts. Gentrify shabby chic nulla sustainable, intelligentsia placeat veniam ex jean shorts YOLO wolf. Post-ironic velit master cleanse DIY yr scenester. Try-hard wolf ex, sartorial ugh narwhal eiusmod consequat pariatur.</p>
+		<div class="saveMe noteButton button" onclick="javascript:saveClicked(this)">&#10003;</div>
+		<div class="delMe noteButton button" onclick="javascript:delClicked(this)">&#10005;</div>
+	</div>
+	<div class="note" onclick="javascript:noteClicked(this)">
+		<p>Pinterest disrupt flexitarian, cornhole try-hard trust fund twee pork belly farm-to-table photo booth. Hoodie photo booth vinyl iPhone, jean shorts blue bottle fingerstache ugh helvetica squid deep v irony Schlitz mlkshk. Stumptown tofu vegan, before they sold out tumblr pop-up kogi Williamsburg craft beer Godard. Neutra Vice Etsy, messenger bag cardigan letterpress literally Carles Wes Anderson roof party Pinterest whatever skateboard Brooklyn. Pug pickled blog Austin, hashtag plaid McSweeney's beard church-key YOLO yr. Pitchfork cred hella, salvia pickled gentrify Terry Richardson Carles Tonx beard Truffaut. Vice forage roof party, Truffaut meh cred Bushwick.</p>
+		<div class="saveMe noteButton button" onclick="javascript:saveClicked(this)">&#10003;</div>
+		<div class="delMe noteButton button" onclick="javascript:delClicked(this)">&#10005;</div>		
+	</div>
 </body>
 
 <script type="text/javascript">
+	x = document.getElementById("note2")
+
 	function noteClicked(noteObject) {
-		if (noteObject.style.background=='red') {
-			noteObject.style.background = 'gainsboro'
-			noteObject.childNodes[1].style.display = 'none'
+		if (noteObject.className == "note") {
+			noteObject.className = "note noteSelected"
+			noteObject.children[1].style.display = "block"
+			noteObject.children[2].style.display = "block"
 		} else {
-			noteObject.style.background = 'red'
-			noteObject.childNodes[1].style.display = 'inline-block'
+			noteObject.className = "note"
+			noteObject.children[1].style.display = "none"
+			noteObject.children[2].style.display = "none"
 		}
+	}
+
+	function delClicked(delButtonObj) {
+		alert('deleted!')
+	}
+
+	function saveClicked(doButtonObj) {
+		alert('saved!')
+	}
+
+	function newNote() {
+		alert('new note!')
 	}
 </script>
