@@ -1,12 +1,25 @@
 <head>
 	<style TYPE="text/css">
 		div.note {background:gainsboro; min-height:30px; line-height:30px; max-width:1000px; width:80%; font-family:sans-serif; margin:4px auto 4px auto; padding:0px 4px 0px 4px}
-		div#newNote {background:palegreen; width:30px; text-align:center; font-size:30px; cursor:pointer}
+		div#newNote {background:palegreen; width:30px; text-align:center; font-size:30px; cursor:pointer; -webkit-user-select:none; -moz-user-select:none}
+		div.delButton {display:none; background:darkgray; float:right; color:white; width:30px; height:30px; margin-right:-4px; text-align:center}
 	</style>
 </head>
 
 <body>
 	<div id="newNote" class="note">&plus;</div>
-	<div class="note">Hello again world. It's me.</div>
-	<div class="note">Post-ironic nisi High Life, quinoa quis whatever fashion axe. Pork belly meggings master cleanse DIY locavore sed. Accusamus nostrud fugiat raw denim cardigan Vice. Excepteur four loko irure jean shorts. Gentrify shabby chic nulla sustainable, intelligentsia placeat veniam ex jean shorts YOLO wolf. Post-ironic velit master cleanse DIY yr scenester. Try-hard wolf ex, sartorial ugh narwhal eiusmod consequat pariatur selvage duis literally.</div>
+	<div class="note" onclick="javascript:noteClicked(this)">Hello again world. It's me.<div class="delButton">&#10005;</div></div>
+	<div class="note" onclick="javascript:noteClicked(this)">Post-ironic nisi High Life, quinoa quis whatever fashion axe. Pork belly meggings master cleanse DIY locavore sed. Accusamus nostrud fugiat raw denim cardigan Vice. Excepteur four loko irure jean shorts. Gentrify shabby chic nulla sustainable, intelligentsia placeat veniam ex jean shorts YOLO wolf. Post-ironic velit master cleanse DIY yr scenester. Try-hard wolf ex, sartorial ugh narwhal eiusmod consequat pariatur selvage duis literally.<div class="delButton">&#10005;</div></div>
 </body>
+
+<script type="text/javascript">
+	function noteClicked(noteObject) {
+		if (noteObject.style.background=='red') {
+			noteObject.style.background = 'gainsboro'
+			noteObject.childNodes[1].style.display = 'none'
+		} else {
+			noteObject.style.background = 'red'
+			noteObject.childNodes[1].style.display = 'inline-block'
+		}
+	}
+</script>
