@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-family"
+			],
+			[
 				"layou",
 				"layoutVars"
 			],
@@ -263,7 +267,7 @@
 			"file": "simpleList.html",
 			"settings":
 			{
-				"buffer_size": 56,
+				"buffer_size": 953,
 				"line_ending": "Windows"
 			}
 		}
@@ -271,9 +275,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 135.0,
+		"height": 60.0,
 		"selected_items":
 		[
+			[
+				"quick",
+				"Git: Quick Commit"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
 			[
 				"git add",
 				"Git: Add Current File"
@@ -283,20 +295,20 @@
 				"Git: Push"
 			],
 			[
-				"git quick",
-				"Git: Quick Commit"
-			],
-			[
-				"git pull",
-				"Git: Pull"
+				"git commit",
+				"Git: Commit"
 			],
 			[
 				"git status",
 				"Git: Status"
 			],
 			[
-				"git commit",
-				"Git: Commit"
+				"git quick",
+				"Git: Quick Commit"
+			],
+			[
+				"git pull",
+				"Git: Pull"
 			],
 			[
 				"add fol",
@@ -405,14 +417,6 @@
 			[
 				"git add cur",
 				"Git: Add Current File"
-			],
-			[
-				"git comm",
-				"Git: Commit"
-			],
-			[
-				"quick",
-				"Git: Quick Commit"
 			],
 			[
 				"git add cu",
@@ -1010,6 +1014,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"STYLE",
 			"onclick",
 			"gridlabd\\.exe",
 			"createFeederDirectory",
@@ -1136,8 +1141,7 @@
 			"scale",
 			"RemoveTog",
 			"scaleGrid",
-			"toggle",
-			"scaleRuler"
+			"toggle"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1400,15 +1404,15 @@
 					"file": "simpleList.html",
 					"settings":
 					{
-						"buffer_size": 56,
+						"buffer_size": 953,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								56
+								953,
+								953
 							]
 						],
 						"settings":
