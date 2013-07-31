@@ -12,7 +12,6 @@
 	<script type="text/javascript">
 		function noteClicked(noteObject) {
 			if (noteObject.className == "note") {
-				// If not selected yet:
 				noteObject.className = "note noteSelected"
 				noteObject.children[0].contentEditable = true
 				noteObject.children[1].style.display = "block"
@@ -21,10 +20,12 @@
 		}
 
 		function delClicked(delButtonObj) {
+			// TODO: do database access here.
 			delButtonObj.parentNode.parentNode.removeChild(delButtonObj.parentNode)
 		}
 
 		function saveClicked(doButtonObj) {
+			// TODO: do database access here.
 			doButtonObj.parentNode.className = "note"
 			doButtonObj.parentNode.children[0].contentEditable = false
 			doButtonObj.parentNode.children[1].style.display = "none"
@@ -32,12 +33,19 @@
 			event.stopPropagation()
 		}
 
-		function newNote() {
+		function newNote(id, content) {
+			if (id==undefined) {
+				id=parseInt(document.body.lastChild.id) + 1
+				// TODO: do database access here.
+			}
+			if (content==undefined) {content = "New Note"}
 			var newDiv = document.createElement("div")
 			newDiv.className = "note"
+			newDiv.id = id
+			newDiv.tabindex = id
 			newDiv.setAttribute("onClick","javascript:noteClicked(this)")
 			var newText = document.createElement("p")
-			newText.innerHTML = "New"
+			newText.innerHTML = content
 			var newSave = document.createElement("div")
 			newSave.className = "saveMe noteButton button"
 			newSave.setAttribute("onClick","javascript:saveClicked(this)")
@@ -51,24 +59,17 @@
 			newDiv.appendChild(newSave)
 			newDiv.appendChild(newDelete)
 		}
+
+		function init() {
+			for (key in testData) {
+				newNote(key,testData[key])
+			}
+		}
+
+		testData = {1:"Hello again world. It's me.", 2:"Post-ironic nisi High Life, quinoa quis whatever fashion axe. Pork belly meggings master cleanse DIY locavore sed. Accusamus nostrud fugiat raw denim cardigan Vice. Excepteur four loko irure jean shorts. Gentrify shabby chic nulla sustainable, intelligentsia placeat veniam ex jean shorts YOLO wolf. Post-ironic velit master cleanse DIY yr scenester. Try-hard wolf ex, sartorial ugh narwhal eiusmod consequat pariatur.", 3:"Pinterest disrupt flexitarian, cornhole try-hard trust fund twee pork belly farm-to-table photo booth. Hoodie photo booth vinyl iPhone, jean shorts blue bottle fingerstache ugh helvetica squid deep v irony Schlitz mlkshk. Stumptown tofu vegan, before they sold out tumblr pop-up kogi Williamsburg craft beer Godard. Neutra Vice Etsy, messenger bag cardigan letterpress literally Carles Wes Anderson roof party Pinterest whatever skateboard Brooklyn. Pug pickled blog Austin, hashtag plaid McSweeney's beard church-key YOLO yr. Pitchfork cred hella, salvia pickled gentrify Terry Richardson Carles Tonx beard Truffaut. Vice forage roof party, Truffaut meh cred Bushwick."}
 	</script>
 </head>
 
-<body>
+<body onload="javascript:init()">
 	<div id="newNote" class="note button" onclick="javascript:newNote()" title="Add another note.">&plus;</div>
-	<div class="note" onclick="javascript:noteClicked(this)">
-		<p>Hello again world. It's me.</p>
-		<div class="saveMe noteButton button" title="Save changes." onclick="javascript:saveClicked(this)">&#10003;</div>
-		<div class="delMe noteButton button" title="Delete this note." onclick="javascript:delClicked(this)">&#10005;</div>
-	</div>
-	<div id="note2" class="note" onclick="javascript:noteClicked(this)">
-		<p>Post-ironic nisi High Life, quinoa quis whatever fashion axe. Pork belly meggings master cleanse DIY locavore sed. Accusamus nostrud fugiat raw denim cardigan Vice. Excepteur four loko irure jean shorts. Gentrify shabby chic nulla sustainable, intelligentsia placeat veniam ex jean shorts YOLO wolf. Post-ironic velit master cleanse DIY yr scenester. Try-hard wolf ex, sartorial ugh narwhal eiusmod consequat pariatur.</p>
-		<div class="saveMe noteButton button" title="Save changes." onclick="javascript:saveClicked(this)">&#10003;</div>
-		<div class="delMe noteButton button" title="Delete this note." onclick="javascript:delClicked(this)">&#10005;</div>
-	</div>
-	<div class="note" onclick="javascript:noteClicked(this)">
-		<p>Pinterest disrupt flexitarian, cornhole try-hard trust fund twee pork belly farm-to-table photo booth. Hoodie photo booth vinyl iPhone, jean shorts blue bottle fingerstache ugh helvetica squid deep v irony Schlitz mlkshk. Stumptown tofu vegan, before they sold out tumblr pop-up kogi Williamsburg craft beer Godard. Neutra Vice Etsy, messenger bag cardigan letterpress literally Carles Wes Anderson roof party Pinterest whatever skateboard Brooklyn. Pug pickled blog Austin, hashtag plaid McSweeney's beard church-key YOLO yr. Pitchfork cred hella, salvia pickled gentrify Terry Richardson Carles Tonx beard Truffaut. Vice forage roof party, Truffaut meh cred Bushwick.</p>
-		<div class="saveMe noteButton button" title="Save changes." onclick="javascript:saveClicked(this)">&#10003;</div>
-		<div class="delMe noteButton button" title="Delete this note." onclick="javascript:delClicked(this)">&#10005;</div>		
-	</div>
 </body>
