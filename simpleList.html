@@ -16,6 +16,7 @@
 				noteObject.children[0].contentEditable = true
 				noteObject.children[1].style.display = "block"
 				noteObject.children[2].style.display = "block"
+				noteObject.children[0].focus()
 			}
 		}
 
@@ -44,6 +45,7 @@
 			newDiv.id = id
 			newDiv.tabindex = id
 			newDiv.setAttribute("onClick","javascript:noteClicked(this)")
+			newDiv.setAttribute("onkeydown","javascript:if(event.keyCode==27){saveClicked(this.children[1])}")
 			var newText = document.createElement("p")
 			newText.innerHTML = content
 			var newSave = document.createElement("div")

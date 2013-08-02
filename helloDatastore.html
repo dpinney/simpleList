@@ -1,0 +1,21 @@
+<head>
+	<script type="text/javascript">
+		function init() {
+			var client = new Dropbox.Client({key: APP_KEY});
+
+			// Try to finish OAuth authorization.
+			client.authenticate({interactive: false}, function (error) {
+				if (error) {
+					alert('Authentication error: ' + error);
+				}
+			});
+
+			if (client.isAuthenticated()) {
+				// Client is authenticated. Display UI.
+			}
+		}
+	</script>
+</head>
+<body onload="javascript:init()">
+	Hello datastore.
+</body>
