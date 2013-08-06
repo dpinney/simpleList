@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Fusion Tables Layer Example: Basic JSONP Request</title>
+		<script
+				src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+		</script>
+		<script type="text/javascript">
+			function initialize() {
+				var query = "SELECT * FROM 1oZTRzr0CpHjeHW8MujtZiLQxdXsfx4AoBXtZtbo"
+				var encodedQuery = encodeURIComponent(query);
+
+				// Construct the URL
+				var url = ['https://www.googleapis.com/fusiontables/v1/query'];
+				url.push('?sql=' + encodedQuery);
+				url.push('&key=AIzaSyD6s92gXHtqVmS6GdPx22XKfxbeiCWtaUU');
+				url.push('&callback=?');
+
+				// Send the JSONP request using jQuery
+				$.ajax({
+						url: url.join(''),
+						dataType: 'jsonp',
+						success: function (data) {document.body.innerHTML += JSON.stringify(data)}
+					});
+			}
+		</script>
+	</head>
+	<body onload="initialize()">
+	</body>
+</html>

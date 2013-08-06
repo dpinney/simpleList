@@ -270,42 +270,26 @@
 				"buffer_size": 4077,
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"contents": "<html lang=\"en-us\" class=\" js \"><head>\n	<meta charset=\"utf-8\">\n\n	<title>Lightbox 2</title>\n\n	<meta name=\"description\" lang=\"en\" content=\"Lightbox 2 is a script used to overlay images on the current page. It's a snap to setup and works on all modern browsers.\">\n	<meta name=\"author\" content=\"Lokesh Dhakar\">\n	<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n\n	<script type=\"text/javascript\" async=\"\" src=\"http://www.google-analytics.com/ga.js\"></script><script id=\"twitter-wjs\" src=\"http://platform.twitter.com/widgets.js\"></script><script src=\"js/modernizr.custom.js\"></script><style type=\"text/css\"></style>\n\n	<link rel=\"shortcut icon\" href=\"img/demopage/favicon.ico\">\n	<link rel=\"stylesheet\" href=\"http://fonts.googleapis.com/css?family=Karla:400,700\">\n	<link rel=\"stylesheet\" href=\"css/screen.css\" media=\"screen\">\n	<link rel=\"stylesheet\" href=\"css/lightbox.css\" media=\"screen\">\n</head>\n<body style=\"\" data-twttr-rendered=\"true\">\n\n<div class=\"wrapper\">\n\n	<section id=\"intro\" class=\"section intro-section\">\n		<header>\n			<h1 class=\"logo\">Lightbox<em class=\"version\">2</em></h1>\n		</header>\n		<p class=\"author\">\n			by Lokesh Dhakar<br>\n			<span class=\"author-links\">\n				<a href=\"http://lokeshdhakar.com\">Blog</a> - <a href=\"http://twitter.com/lokesh\">Twitter</a> - <a href=\"http://github.com/lokesh\">Github</a>\n			</span>\n		</p>\n		<p class=\"lead\">\n			Lightbox is small javascript library used to overlay images on top of the current page. It's a <em>snap to setup</em> and works on <em>all modern browsers</em>.\n		</p>\n	</section>\n\n	<section id=\"examples\" class=\"section examples-section\">\n		<header>\n			<h2 class=\"section-header\">Examples</h2>\n		</header>\n\n		<h3>Single images</h3>\n		<div class=\"image-row\">\n			<a class=\"example-image-link\" href=\"img/demopage/image-1.jpg\" data-lightbox=\"example-1\"><img class=\"example-image\" src=\"img/demopage/thumb-1.jpg\" alt=\"thumb-1\" width=\"150\" height=\"150\"></a>\n			<a class=\"example-image-link\" href=\"img/demopage/image-2.jpg\" data-lightbox=\"example-2\" title=\"Optional caption.\"><img class=\"example-image\" src=\"img/demopage/thumb-2.jpg\" alt=\"thumb-1\" width=\"150\" height=\"150\"></a>\n		</div>\n\n		<h3 style=\"clear: both;\">An image set</h3>\n\n		<div class=\"image-row\">\n			<div class=\"image-set\">\n				<a class=\"example-image-link\" href=\"img/demopage/image-3.jpg\" data-lightbox=\"example-set\" title=\"Click on the right side of the image to move forward.\"><img class=\"example-image\" src=\"img/demopage/thumb-3.jpg\" alt=\"Plants: image 1 0f 4 thumb\" width=\"150\" height=\"150\"></a>\n				<a class=\"example-image-link\" href=\"img/demopage/image-4.jpg\" data-lightbox=\"example-set\" title=\"Or press the right arrow on your keyboard.\"><img class=\"example-image\" src=\"img/demopage/thumb-4.jpg\" alt=\"Plants: image 2 0f 4 thumb\" width=\"150\" height=\"150\"></a>\n				<a class=\"example-image-link\" href=\"img/demopage/image-5.jpg\" data-lightbox=\"example-set\" title=\"The script preloads the next image in the set as you're viewing.\"><img class=\"example-image\" src=\"img/demopage/thumb-5.jpg\" alt=\"Plants: image 3 0f 4 thumb\" width=\"150\" height=\"150\"></a>\n				<a class=\"example-image-link\" href=\"img/demopage/image-6.jpg\" data-lightbox=\"example-set\" title=\"Click anywhere outside the image or the X to the right to close.\"><img class=\"example-image\" src=\"img/demopage/thumb-6.jpg\" alt=\"Plants: image 4 0f 4 thumb\" width=\"150\" height=\"150\"></a>\n			</div>\n		</div>\n	</section>\n\n	<section id=\"download\" class=\"section download-section\">\n		<header>\n			<h2 class=\"section-header\">Download</h2>\n		</header>\n\n		<a href=\"releases/lightbox2.6.zip\" class=\"download-button\">\n			<div class=\"file\">\n				Lightbox\n				<div class=\"version\">\n					v2.6\n				</div>\n			</div>\n		</a>\n\n		<p>\n			Lightbox2 is open-source.<br>View and fork the code on <a href=\"https://github.com/lokesh/lightbox2\">Github</a>.\n		</p>\n	</section>\n\n	<section id=\"how-to-use\" class=\"section how-to-use-section\">\n		<header>\n			<h2 class=\"section-header\">How to use</h2>\n			<h2 class=\"section-subheader\">Step-by-step instructions</h2>\n		</header>\n		<h3>Part 1 - Get setup</h3>\n		<ol>\n			<li>Download and unzip the latest version of Lightbox from above.</li>\n			<li>Look inside the <code>js</code> folder to find <code>jquery-1.10.2.min.js</code> and <code>lightbox-2.6.min.js</code> and load both of these files from your html page. Load jQuery first:\n<pre><code>&lt;script src=\"js/jquery-1.10.2.min.js\"&gt;&lt;/script&gt;\n&lt;script src=\"js/lightbox-2.6.min.js\"&gt;&lt;/script&gt;\n</code></pre></li>\n			<li>Look inside the <code>css</code> folder to find <code>lightbox.css</code> and load it from your html page:\n<pre><code>&lt;link href=\"css/lightbox.css\" rel=\"stylesheet\" /&gt;\n</code></pre>\n			</li>\n			<li>Look inside the <code>img</code> folder to find <code>close.png</code>, <code>loading.gif</code>, <code>prev.png</code>, and <code>next.png</code>. These files are used in <code>lightbox.css</code>. By default, <code>lightbox.css</code> will look for these images in a folder called <code>img</code>.</li>\n		</ol>\n		<h3>Part 2 - Turn it on</h3>\n	<ul>\n			<li>Add a <code>data-lightbox</code> attribute to any image link to activate Lightbox. For the value of the attribute, use a unique name for each image. For example:\n<pre><code>&lt;a href=\"img/image-1.jpg\" data-lightbox=\"image-1\" title=\"My caption\"&gt;image #1&lt;/a&gt;\n</code></pre>\n			 <div class=\"sub-point\"><em>Optional:</em> Set the <code>title</code> attribute if you want to show a caption.</div> </li>\n			<li>If you have a group of related images that you would like to combine into a set, use the same <code>data-lightbox</code> attribute value for all of the images. For example:\n<pre><code>&lt;a href=\"img/image-2.jpg\" data-lightbox=\"roadtrip\"&gt;image #2&lt;/a&gt;\n&lt;a href=\"img/image-3.jpg\" data-lightbox=\"roadtrip\"&gt;image #3&lt;/a&gt;\n&lt;a href=\"img/image-4.jpg\" data-lightbox=\"roadtrip\"&gt;image #4&lt;/a&gt;\n</code></pre></li>\n<li class=\"last-list-item\"><div class=\"sub-point\">For you long time Lightbox users, don't fret, you can still enable Lightbox by using <code>rel=\"lightbox\"</code>. The new <code>data-lightbox</code> approach is preferred though as it is valid html.</div></li>\n	\n		</ul>\n	</section>\n\n\n	<section id=\"help\" class=\"section questions-section\">\n		<header>\n			<h2 class=\"section-header\">Help</h2>\n		</header>\n		<h3>Bugs</h3>\n		<p>If you find a bug, create an <a href=\"https://github.com/lokesh/lightbox2/issues\">issue on Github</a>. Include your operating system and browser version along with detailed steps to reproduce the bug.</p>\n\n		<h3>Feature requests</h3>\n		<p>If you want a feature added, please create an <a href=\"https://github.com/lokesh/lightbox2/issues\">issue on Github</a>. Someone else or I might be able to help out. No guarantees.</p>\n\n		<h3>Support questions</h3>\n		<p>If you have a question that is not a bug or a feature request, your best chance of getting an answer is by following these steps:</p>\n		<ol class=\"simple-list\">\n<!-- 			<li><a href=\"http://lokeshdhakar.com/forums\">Search the Lightbox forums</a>. <br /><span class=\"sub-point\">You will not be able to post new questions in the forum as posting has been disabled. The forum is having spam problems and the forum will eventually be phased out.</span></li>\n -->			<li><a href=\"http://stackoverflow.com/\">Search Stackoverflow</a>.</li>\n			<li class=\"last-list-item\"><a href=\"http://stackoverflow.com/questions/ask\">Create a new question on Stackoverflow</a>.</li>\n		</ol>\n		<h3>Older versions</h3>\n		<p>See a change log and access older versions on the <a href=\"https://github.com/lokesh/lightbox2/releases\">Github releases page</a>.</p>\n\n	</section>\n\n	<section id=\"doante\" class=\"section donate-section\">\n		<header>\n			<h2 class=\"section-header\">Donate</h2>\n		</header>\n		<p>\n			Lightbox is completely free to use. If you're using Lightbox on a commercial project and are feeling generous, consider a donation. Thanks!\n		</p>\n		<form class=\"donate-button-form\" name=\"_xclick\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">\n			<fieldset>\n				<input type=\"hidden\" name=\"cmd\" value=\"_xclick\">\n				<input type=\"hidden\" name=\"business\" value=\"lokesh.dhakar@gmail.com\">\n				<input type=\"hidden\" name=\"item_name\" value=\"Donation for Lightbox\">\n				<input type=\"hidden\" name=\"no_note\" value=\"1\">\n				<input type=\"hidden\" name=\"currency_code\" value=\"USD\">\n				<input type=\"hidden\" name=\"tax\" value=\"0\">\n				<input type=\"hidden\" name=\"bn\" value=\"PP-DonationsBF\">\n				<input type=\"image\" src=\"img/demopage/donate.png\" name=\"submit\" class=\"donate-button\" alt=\"Make payments with PayPal - it's fast, free and secure!\">\n			</fieldset>\n		</form>\n	</section>\n\n	<section id=\"credits\" class=\"credits-section last\">\n		<p>Lightbox2 created by Lokesh Dhakar<br>\n		<a href=\"http://lokeshdhakar.com\">Blog</a> - <a href=\"http://twitter.com/lokesh\">Twitter</a> - <a href=\"http://github.com/lokesh\">Github</a></p>\n	</section>\n\n	<section id=\"sharing\" class=\"sharing-section\">\n		<iframe allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" src=\"http://platform.twitter.com/widgets/tweet_button.1374787011.html#_=1375378305074&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Flokeshdhakar.com%2Fprojects%2Flightbox2%2F&amp;size=l&amp;text=Lightbox%202&amp;url=http%3A%2F%2Flokeshdhakar.com%2Fprojects%2Flightbox2%2F&amp;via=lokesh\" class=\"twitter-share-button twitter-count-horizontal\" title=\"Twitter Tweet Button\" data-twttr-rendered=\"true\" style=\"width: 139px; height: 28px;\"></iframe>\n		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>\n	</section>\n\n\n	<script src=\"js/jquery-1.10.2.min.js\"></script>\n	<script src=\"js/lightbox-2.6.min.js\"></script>\n\n	<script>\n	var _gaq = _gaq || [];\n	_gaq.push(['_setAccount', 'UA-2196019-1']);\n	_gaq.push(['_trackPageview']);\n\n	(function() {\n		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n	})();\n	</script>\n\n</div>\n\n\n\n<div id=\"lightboxOverlay\" class=\"lightboxOverlay\" style=\"width: 1903px; height: 3503px; display: block;\"></div><div id=\"lightbox\" class=\"lightbox\" style=\"display: block; top: 113.9px; left: 0px;\"><div class=\"lb-outerContainer\" style=\"width: 613px; height: 508px;\"><div class=\"lb-container\"><img class=\"lb-image\" src=\"img/demopage/image-1.jpg\" style=\"display: block; width: 605px; height: 500px;\"><div class=\"lb-nav\" style=\"display: block;\"><a class=\"lb-prev\" href=\"\" style=\"display: none;\"></a><a class=\"lb-next\" href=\"\" style=\"display: none;\"></a></div><div class=\"lb-loader\" style=\"display: none;\"><a class=\"lb-cancel\"></a></div></div></div><div class=\"lb-dataContainer\" style=\"display: block; width: 613px;\"><div class=\"lb-data\"><div class=\"lb-details\"><span class=\"lb-caption\" style=\"display: none;\"></span><span class=\"lb-number\" style=\"display: none;\"></span></div><div class=\"lb-closeContainer\"><a class=\"lb-close\"></a></div></div></div></div><iframe id=\"rdbIndicator\" width=\"100%\" height=\"270\" border=\"0\" src=\"chrome-extension://oknpjjbmpnndlpmnhmekjpocelpnlfdi/indicator.html\" style=\"display: none; border: 0; position: fixed; left: 0; top: 0; z-index: 2147483647\"></iframe></body></html>",
-			"settings":
-			{
-				"buffer_size": 11548,
-				"line_ending": "Windows",
-				"name": "<html lang=\"en-us\" class=\" js \"><head>"
-			}
-		},
-		{
-			"contents": "(function(){var b,d,c;b=jQuery;c=(function(){function b(){this.fadeDuration=500;this.fitImagesInViewport=true;this.resizeDuration=700;this.showImageNumberLabel=true;this.wrapAround=false}b.prototype.albumLabel=function(b,c){return\"Image \"+b+\" of \"+c};return b})();d=(function(){function c(b){this.options=b;this.album=[];this.currentImageIndex=void 0;this.init()}c.prototype.init=function(){this.enable();return this.build()};c.prototype.enable=function(){var c=this;return b('body').on('click','a[rel^=lightbox], area[rel^=lightbox], a[data-lightbox], area[data-lightbox]',function(d){c.start(b(d.currentTarget));return false})};c.prototype.build=function(){var c=this;b(\"<div id='lightboxOverlay' class='lightboxOverlay'></div><div id='lightbox' class='lightbox'><div class='lb-outerContainer'><div class='lb-container'><img class='lb-image' src='' /><div class='lb-nav'><a class='lb-prev' href='' ></a><a class='lb-next' href='' ></a></div><div class='lb-loader'><a class='lb-cancel'></a></div></div></div><div class='lb-dataContainer'><div class='lb-data'><div class='lb-details'><span class='lb-caption'></span><span class='lb-number'></span></div><div class='lb-closeContainer'><a class='lb-close'></a></div></div></div></div>\").appendTo(b('body'));this.$lightbox=b('#lightbox');this.$overlay=b('#lightboxOverlay');this.$outerContainer=this.$lightbox.find('.lb-outerContainer');this.$container=this.$lightbox.find('.lb-container');this.containerTopPadding=parseInt(this.$container.css('padding-top'),10);this.containerRightPadding=parseInt(this.$container.css('padding-right'),10);this.containerBottomPadding=parseInt(this.$container.css('padding-bottom'),10);this.containerLeftPadding=parseInt(this.$container.css('padding-left'),10);this.$overlay.hide().on('click',function(){c.end();return false});this.$lightbox.hide().on('click',function(d){if(b(d.target).attr('id')==='lightbox'){c.end()}return false});this.$outerContainer.on('click',function(d){if(b(d.target).attr('id')==='lightbox'){c.end()}return false});this.$lightbox.find('.lb-prev').on('click',function(){if(c.currentImageIndex===0){c.changeImage(c.album.length-1)}else{c.changeImage(c.currentImageIndex-1)}return false});this.$lightbox.find('.lb-next').on('click',function(){if(c.currentImageIndex===c.album.length-1){c.changeImage(0)}else{c.changeImage(c.currentImageIndex+1)}return false});return this.$lightbox.find('.lb-loader, .lb-close').on('click',function(){c.end();return false})};c.prototype.start=function(c){var f,e,j,d,g,n,o,k,l,m,p,h,i;b(window).on(\"resize\",this.sizeOverlay);b('select, object, embed').css({visibility:\"hidden\"});this.$overlay.width(b(document).width()).height(b(document).height()).fadeIn(this.options.fadeDuration);this.album=[];g=0;j=c.attr('data-lightbox');if(j){h=b(c.prop(\"tagName\")+'[data-lightbox=\"'+j+'\"]');for(d=k=0,m=h.length;k<m;d=++k){e=h[d];this.album.push({link:b(e).attr('href'),title:b(e).attr('title')});if(b(e).attr('href')===c.attr('href')){g=d}}}else{if(c.attr('rel')==='lightbox'){this.album.push({link:c.attr('href'),title:c.attr('title')})}else{i=b(c.prop(\"tagName\")+'[rel=\"'+c.attr('rel')+'\"]');for(d=l=0,p=i.length;l<p;d=++l){e=i[d];this.album.push({link:b(e).attr('href'),title:b(e).attr('title')});if(b(e).attr('href')===c.attr('href')){g=d}}}}f=b(window);o=f.scrollTop()+f.height()/10;n=f.scrollLeft();this.$lightbox.css({top:o+'px',left:n+'px'}).fadeIn(this.options.fadeDuration);this.changeImage(g)};c.prototype.changeImage=function(f){var d,c,e=this;this.disableKeyboardNav();d=this.$lightbox.find('.lb-image');this.sizeOverlay();this.$overlay.fadeIn(this.options.fadeDuration);b('.lb-loader').fadeIn('slow');this.$lightbox.find('.lb-image, .lb-nav, .lb-prev, .lb-next, .lb-dataContainer, .lb-numbers, .lb-caption').hide();this.$outerContainer.addClass('animating');c=new Image();c.onload=function(){var m,g,h,i,j,k,l;d.attr('src',e.album[f].link);m=b(c);d.width(c.width);d.height(c.height);if(e.options.fitImagesInViewport){l=b(window).width();k=b(window).height();j=l-e.containerLeftPadding-e.containerRightPadding-20;i=k-e.containerTopPadding-e.containerBottomPadding-110;if((c.width>j)||(c.height>i)){if((c.width/j)>(c.height/i)){h=j;g=parseInt(c.height/(c.width/h),10);d.width(h);d.height(g)}else{g=i;h=parseInt(c.width/(c.height/g),10);d.width(h);d.height(g)}}}return e.sizeContainer(d.width(),d.height())};c.src=this.album[f].link;this.currentImageIndex=f};c.prototype.sizeOverlay=function(){return b('#lightboxOverlay').width(b(document).width()).height(b(document).height())};c.prototype.sizeContainer=function(f,g){var b,d,e,h,c=this;h=this.$outerContainer.outerWidth();e=this.$outerContainer.outerHeight();d=f+this.containerLeftPadding+this.containerRightPadding;b=g+this.containerTopPadding+this.containerBottomPadding;this.$outerContainer.animate({width:d,height:b},this.options.resizeDuration,'swing');setTimeout(function(){c.$lightbox.find('.lb-dataContainer').width(d);c.$lightbox.find('.lb-prevLink').height(b);c.$lightbox.find('.lb-nextLink').height(b);c.showImage()},this.options.resizeDuration)};c.prototype.showImage=function(){this.$lightbox.find('.lb-loader').hide();this.$lightbox.find('.lb-image').fadeIn('slow');this.updateNav();this.updateDetails();this.preloadNeighboringImages();this.enableKeyboardNav()};c.prototype.updateNav=function(){this.$lightbox.find('.lb-nav').show();if(this.album.length>1){if(this.options.wrapAround){this.$lightbox.find('.lb-prev, .lb-next').show()}else{if(this.currentImageIndex>0){this.$lightbox.find('.lb-prev').show()}if(this.currentImageIndex<this.album.length-1){this.$lightbox.find('.lb-next').show()}}}};c.prototype.updateDetails=function(){var b=this;if(typeof this.album[this.currentImageIndex].title!=='undefined'&&this.album[this.currentImageIndex].title!==\"\"){this.$lightbox.find('.lb-caption').html(this.album[this.currentImageIndex].title).fadeIn('fast')}if(this.album.length>1&&this.options.showImageNumberLabel){this.$lightbox.find('.lb-number').text(this.options.albumLabel(this.currentImageIndex+1,this.album.length)).fadeIn('fast')}else{this.$lightbox.find('.lb-number').hide()}this.$outerContainer.removeClass('animating');this.$lightbox.find('.lb-dataContainer').fadeIn(this.resizeDuration,function(){return b.sizeOverlay()})};c.prototype.preloadNeighboringImages=function(){var c,b;if(this.album.length>this.currentImageIndex+1){c=new Image();c.src=this.album[this.currentImageIndex+1].link}if(this.currentImageIndex>0){b=new Image();b.src=this.album[this.currentImageIndex-1].link}};c.prototype.enableKeyboardNav=function(){b(document).on('keyup.keyboard',b.proxy(this.keyboardAction,this))};c.prototype.disableKeyboardNav=function(){b(document).off('.keyboard')};c.prototype.keyboardAction=function(g){var d,e,f,c,b;d=27;e=37;f=39;b=g.keyCode;c=String.fromCharCode(b).toLowerCase();if(b===d||c.match(/x|o|c/)){this.end()}else if(c==='p'||b===e){if(this.currentImageIndex!==0){this.changeImage(this.currentImageIndex-1)}}else if(c==='n'||b===f){if(this.currentImageIndex!==this.album.length-1){this.changeImage(this.currentImageIndex+1)}}};c.prototype.end=function(){this.disableKeyboardNav();b(window).off(\"resize\",this.sizeOverlay);this.$lightbox.fadeOut(this.options.fadeDuration);this.$overlay.fadeOut(this.options.fadeDuration);return b('select, object, embed').css({visibility:\"visible\"})};return c})();b(function(){var e,b;b=new c();return e=new d(b)})}).call(this);",
-			"file": "/C/Users/dwp0/AppData/Local/Temp/Temp1_lightbox2.6.zip/lightbox/js/lightbox-2.6.min.js",
-			"file_size": 7389,
-			"file_write_time": 130198520241031707,
-			"settings":
-			{
-				"buffer_size": 7389,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "helloDatastore.html",
-			"settings":
-			{
-				"buffer_size": 461,
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 85.0,
+		"height": 110.0,
 		"selected_items":
 		[
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
 			[
 				"pretty",
 				"Pretty JSON: Reformat (Pretty Print) JSON"
@@ -319,19 +303,7 @@
 				"Indentation: Convert to Tabs"
 			],
 			[
-				"git push",
-				"Git: Push"
-			],
-			[
 				"commit",
-				"Git: Commit"
-			],
-			[
-				"git add",
-				"Git: Add..."
-			],
-			[
-				"git commit",
 				"Git: Commit"
 			],
 			[
@@ -836,6 +808,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/dwp0/Dropbox/simpleList/helloDatastore.html",
+		"/C/Users/dwp0/AppData/Local/Temp/Temp1_lightbox2.6.zip/lightbox/js/lightbox-2.6.min.js",
 		"/C/Users/dwp0/AppData/Roaming/Microsoft/Windows/Recent/gridEdit.html.lnk",
 		"/C/Users/dwp0/Dropbox/simpleList/.git/config",
 		"/C/Users/dwp0/AppData/Local/Temp/89871e45-802d-4c20-b9cd-0d3d9dc886e8/crnomf/User/thomas.kirk@nreca.coop.json",
@@ -961,9 +935,7 @@
 		"/C/Users/dwp0/Dropbox/OMF/omf/calibration/test.txt",
 		"/C/Users/dwp0/AppData/Local/Temp/Temp1_Calibration_Scripts.zip/Calibration_Scripts/Configuration.py",
 		"/C/Users/dwp0/AppData/Local/Temp/Temp1_Calibration_Scripts.zip/Calibration_Scripts/feeder.py",
-		"/C/Users/dwp0/AppData/Local/Temp/Temp1_Calibration_Scripts.zip/Calibration_Scripts/TechnologyParameters.py",
-		"/C/Users/dwp0/AppData/Local/Temp/Temp1_Calibration_Scripts.zip/Calibration_Scripts/add_thermal_storage.py",
-		"/C/Users/dwp0/Dropbox/OMF/omf/data/Analysis/fawefawerttg6y6u.json"
+		"/C/Users/dwp0/AppData/Local/Temp/Temp1_Calibration_Scripts.zip/Calibration_Scripts/TechnologyParameters.py"
 	],
 	"find":
 	{
@@ -1552,394 +1524,6 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 177.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"settings":
-					{
-						"buffer_size": 11548,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2661,
-								2664
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<html lang=\"en-us\" class=\" js \"><head>",
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"sublime_auto_complete": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 291.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/dwp0/AppData/Local/Temp/Temp1_lightbox2.6.zip/lightbox/js/lightbox-2.6.min.js",
-					"settings":
-					{
-						"buffer_size": 7389,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7389,
-								7389
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 50260.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "helloDatastore.html",
-					"settings":
-					{
-						"buffer_size": 461,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								461,
-								461
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"sublime_auto_complete": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -2121,6 +1705,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"omf",
+				"/C/Users/dwp0/Dropbox/OMF/omf/omf.sublime-project"
+			],
 			[
 				"omf.",
 				"/C/Users/dwp0/Dropbox/OMF/omf/omf.sublime-project"
