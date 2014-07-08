@@ -2,10 +2,10 @@ import dropbox
 from dropbox.datastore import DatastoreManager
 from dropbox.client import DropboxClient, DropboxOAuth2FlowNoRedirect
 
-APP_KEY = "xuans4ktmyuh1ub"
-APP_SECRET = "3a0i0nrfly46tu8"
+APP_KEY = "TBD"
+APP_SECRET = "TBD"
 # From getAuthKey:
-ACC_TOKEN = "V2pW3hdZS20AAAAAAAB3eGIVMfqyH5TyryEru8qXsjP4Fc7oGhDs8fMs7Rb59Dub"
+ACC_TOKEN = "TBD"
 UID = 6925109
 
 def getAuthKey():
