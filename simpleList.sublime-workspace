@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"enco",
+				"encodeURIComponent"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
 				"font",
 				"font-family"
 			],
@@ -255,29 +263,29 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 128,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "simpleList.html",
-			"settings":
-			{
-				"buffer_size": 4077,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 110.0,
+		"height": 85.0,
 		"selected_items":
 		[
+			[
+				"proj cl",
+				"Project: Close"
+			],
+			[
+				"close ",
+				"Project: Close"
+			],
+			[
+				"pro cl",
+				"Project: Close"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
 			[
 				"git push",
 				"Git: Push"
@@ -287,8 +295,8 @@
 				"Git: Commit"
 			],
 			[
-				"git add",
-				"Git: Add..."
+				"tabs",
+				"Indentation: Convert to Tabs"
 			],
 			[
 				"pretty",
@@ -297,10 +305,6 @@
 			[
 				"html",
 				"Set Syntax: HTML"
-			],
-			[
-				"tabs",
-				"Indentation: Convert to Tabs"
 			],
 			[
 				"commit",
@@ -777,21 +781,9 @@
 			[
 				"pack instal",
 				"Package Control: Install Package"
-			],
-			[
-				"install pack",
-				"Package Control: Install Package"
-			],
-			[
-				"json pre",
-				"Pretty JSON: Reformat (Pretty Print) JSON"
-			],
-			[
-				"bookmark",
-				"Bookmarks: Select All"
 			]
 		],
-		"width": 522.0
+		"width": 386.0
 	},
 	"console":
 	{
@@ -808,7 +800,22 @@
 	},
 	"file_history":
 	[
+		"/C/Users/dwp0/Dropbox/simpleList/helloFusion.html",
+		"/C/Users/dwp0/Dropbox/simpleList/README.md",
+		"/C/Users/dwp0/Dropbox/simpleList/helloDropbox.html",
 		"/C/Users/dwp0/Dropbox/simpleList/helloDatastore.html",
+		"/C/Users/dwp0/AppData/Local/Temp/Temp1_ACEC Peaks for NRECA Raw Data.zip/Friendship 2011.txt",
+		"/C/Users/dwp0/AppData/Local/Temp/Temp1_ACEC Peaks for NRECA Raw Data.zip/July 2012/Arrowhead.txt",
+		"/C/Users/dwp0/AppData/Local/Temp/Temp1_ACEC Peaks for NRECA Raw Data.zip/Cambria 2011.txt",
+		"/C/Users/dwp0/AppData/Local/Temp/Temp1_ACEC Peaks for NRECA Raw Data.zip/July 2012/Grant.txt",
+		"/C/Users/dwp0/AppData/Local/Temp/Temp1_ACEC Peaks for NRECA Raw Data.zip/ACEC Total 2012.txt",
+		"/C/Users/dwp0/AppData/Local/Temp/Temp1_ACEC Peaks for NRECA Raw Data.zip/ACEC Total 2011.txt",
+		"/C/Users/dwp0/Dropbox/simpleList/helloSimpleDb.html",
+		"/C/Users/dwp0/Downloads/6068d2d4d20c3aacfed87a24fa4fef8d90ef1dff-privatekey.p12",
+		"/C/Users/dwp0/Dropbox/simpleList/simpledb.js",
+		"/C/Users/dwp0/Downloads/rootkey.csv",
+		"/C/Users/dwp0/Dropbox/simpleList/simpleList.html",
+		"/C/Users/dwp0/Desktop/The Old Man and the Sea.txt",
 		"/C/Users/dwp0/AppData/Local/Temp/Temp1_lightbox2.6.zip/lightbox/js/lightbox-2.6.min.js",
 		"/C/Users/dwp0/AppData/Roaming/Microsoft/Windows/Recent/gridEdit.html.lnk",
 		"/C/Users/dwp0/Dropbox/simpleList/.git/config",
@@ -920,22 +927,7 @@
 		"/C/Users/dwp0/AppData/Local/Temp/7zO22B.tmp/daemon.py",
 		"/C/Users/dwp0/Dropbox/OMF/omf/data/Study/zSolar Trio---CommSolar.json",
 		"/C/Users/dwp0/AppData/Local/Temp/89871e45-802d-4c20-b9cd-0d3d9dc886e8/crnomf/Analysis/zWind Olin Barre.json",
-		"/C/Users/dwp0/Dropbox/OMF/omf/S3KEY",
-		"/C/Users/dwp0/Dropbox/OMF/omf/scratch/daemonTest.py",
-		"/C/Users/dwp0/Dropbox/OMF/omf/test.py",
-		"/C/Python27/lib/site-packages/boto/sqs/connection.py",
-		"/C/Users/dwp0/Downloads/crnomfkeys.pem",
-		"/C/Users/dwp0/Dropbox/OMF/omf/scratch/AmazonS3Test.py",
-		"/C/Users/dwp0/Downloads/testFeeder.json",
-		"/C/Users/dwp0/Downloads/credentials.csv",
-		"/C/Users/dwp0/Downloads/rootkey.csv",
-		"/C/Users/dwp0/Dropbox/OMF/omf/static/even_newer.json",
-		"/C/Users/dwp0/Downloads/z13+Node+Battery+Peak+Shaving.json",
-		"/C/Users/dwp0/Dropbox/OMF/omf/scratch/amazonSimpleDbTest.py",
-		"/C/Users/dwp0/Dropbox/OMF/omf/calibration/test.txt",
-		"/C/Users/dwp0/AppData/Local/Temp/Temp1_Calibration_Scripts.zip/Calibration_Scripts/Configuration.py",
-		"/C/Users/dwp0/AppData/Local/Temp/Temp1_Calibration_Scripts.zip/Calibration_Scripts/feeder.py",
-		"/C/Users/dwp0/AppData/Local/Temp/Temp1_Calibration_Scripts.zip/Calibration_Scripts/TechnologyParameters.py"
+		"/C/Users/dwp0/Dropbox/OMF/omf/S3KEY"
 	],
 	"find":
 	{
@@ -1014,6 +1006,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"'",
+			"\"",
 			"key",
 			"i",
 			"x",
@@ -1139,9 +1133,7 @@
 			"                     ",
 			"                    ",
 			"                   ",
-			"                  ",
-			"                 ",
-			"                "
+			"                  "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1267,268 +1259,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "README.md",
-					"settings":
-					{
-						"buffer_size": 128,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								128,
-								128
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "simpleList.html",
-					"settings":
-					{
-						"buffer_size": 4077,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1240,
-								1240
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"sublime_auto_complete": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1705,6 +1437,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"omf.su",
+				"/C/Users/dwp0/Dropbox/OMF/omf/omf.sublime-project"
+			],
 			[
 				"omf",
 				"/C/Users/dwp0/Dropbox/OMF/omf/omf.sublime-project"

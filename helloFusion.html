@@ -22,17 +22,38 @@
 			}
 
 			function postInsert() {
-				$.post(
-					'https://www.googleapis.com/fusiontables/v1/query',
-					{key:"AIzaSyD6s92gXHtqVmS6GdPx22XKfxbeiCWtaUU", sql:"INSERT INTO 1oZTRzr0CpHjeHW8MujtZiLQxdXsfx4AoBXtZtbo VALUES (4, 'NEWDATA!!!!', '2013-08-05 12:00:00')"},
-					function(data){console.log(data)},
-					'json'
-				)
+				// NOTE: Google requires Oauth authentication for any insert/update/delete statements. There's a mechanism for doing this without a user in the loop, but it's a pain.
+				$.ajax({
+					type:'POST',
+					url:'https://www.googleapis.com/fusiontables/v1/query',
+					data:{key:'AIzaSyD6s92gXHtqVmS6GdPx22XKfxbeiCWtaUU', sql:"INSERT INTO 1oZTRzr0CpHjeHW8MujtZiLQxdXsfx4AoBXtZtbo ('noteId','noteContents','noteUpdated') VALUES (5, 'STUFF', '2013-08-05 12:00:00')"},
+					success:function(x){console.log(x)},
+					contentType: "application/x-www-form-urlencoded",
+					dataType: 'json'
+				})
+			}
+
+			function getToken() {
+				$.ajax({
+					type:'POST',
+					url: 'https://accounts.google.com/o/oauth2/token',
+					data: 'BLAHBLAHBLAH',
+					success: function(x){console.log(x)}
+				})
 			}
 
 			function initialize() {		
-				// query("INSERT INTO 1oZTRzr0CpHjeHW8MujtZiLQxdXsfx4AoBXtZtbo VALUES (4, 'NEWDATA!!!!', '2013-08-05 12:00:00')", function(data){console.log(data)})
+				// query errors on insert attempts with a get request. REST nerds.
+				query("INSERT INTO 1oZTRzr0CpHjeHW8MujtZiLQxdXsfx4AoBXtZtbo VALUES (4, 'NEWDATA!!!!', '2013-08-05 12:00:00')", function(data){console.log(data)})
+
+				// when we insert with post, we get an authorization error. 
+				postInsert()
+
+				// at least select works.
 				query("SELECT * FROM 1oZTRzr0CpHjeHW8MujtZiLQxdXsfx4AoBXtZtbo", function(data){document.body.innerHTML += JSON.stringify(data)})
+
+				// auth attempt
+				getToken()
 			}
 		</script>
 	</head>
